@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+
+    "name": "Zetl",
+    "description": "Take notes on webpages and save them for later.",
+    "version": "1.0",
+
+    "permissions": [
+	"tabs",
+	"storage",
+	"commands"
+    ],
+
+    "browser_action": {
+	"default_icon": "zetl.png",
+	"default_popup": "popup.html"
+    },
+    
+    "commands": {
+	"_execute_browser_action": {
+	    "suggested_key": {
+		"default": "Ctrl+Shift+Z"
+	    }
+	},
+	"save_note": {
+	    "suggested_key": {
+		"default": "Alt+Shift+Z"
+	    },
+	    "description": "Save the note currently being edited."
+	}
+    }
+}

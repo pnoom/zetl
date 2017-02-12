@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Take notes on webpages with Zetl.</title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker"
+	  rel="stylesheet">
+    <style>
+      body {
+        --font-family: "Segoe UI,Lucida Grande,Tahoma,sans-serif";
+        font-family: var(--font-family);
+        font-size: 100%;
+        background: #ffff99;
+      }
+      #title {
+        font-family: 'Permanent Marker', cursive;
+        font-size: 180%;
+      }
+      #currenturl {
+        font-size: 80%;
+      }
+      a {
+        font-size: 80%;
+      }
+      button {
+        font-family: var(--font-family);
+        font-size: 100%;
+      }
+      .astext {
+        background:none;
+        border:none;
+        text-align:left;
+      }
+      textarea {
+        font-family: var(--font-family);
+        font-size: 100%;
+        resize:horizontal;
+      }
+      .icon {
+        height: auto;
+        width: auto;
+        max-width: 25px;
+        max-height: 25px;
+      }
+      td {
+        vertical-align: top;
+      }
+    </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <div id="title">Take notes on webpages with Zetl.</div>
+    <br>
+    <div id="currenturl"></div>
+    <br>
+    <textarea id="textfield" rows="4" cols="80" autofocus="true"></textarea>
+    <br>
+    <button id="save">Save</button>
+    <button id="delete">Delete note</button>
+    <button id="undo">Undo delete note</button>
+    <button id="deleteall">Delete all saved notes</button>
+    <button id="tips">Show tips</button>
+    <br>
+    <br>
+    <div id="status"></div>
+    <br>
+    <div id="listinfo">Click a note to edit it.</div>
+    <br>
+    <div id="noteslist"></div>
+    <br>
+  </body>
+</html>
